@@ -1,0 +1,25 @@
+/*
+*  SVG CSS Stylesheet for Plant Friend Capstone project
+*  by Laura Kurtzberg
+*  created for IMFA at University of Miami
+*/
+
+div#svgcontainer {
+  z-index: 1000;
+  margin-top: 200px;
+  position: relative;
+  margin-left: 100px;
+}
+
+path.line {
+  fill:none;
+  fill-rule:evenodd;
+  stroke:#252525;
+  stroke-width:3;
+  stroke-linecap:butt;
+  stroke-linejoin:miter;
+  stroke-miterlimit:4;
+  stroke-dasharray:3, 3;
+  stroke-dashoffset:0;
+  stroke-opacity:1
+}

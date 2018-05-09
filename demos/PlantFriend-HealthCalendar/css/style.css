@@ -1,0 +1,158 @@
+/*
+*  Main CSS Stylesheet for Plant Friend Capstone project
+*  by Laura Kurtzberg
+*  created for IMFA at University of Miami
+*/
+
+
+/**************** General Styles for all pages ****************/
+
+body {
+  font-family: 'Nunito', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Footer */
+footer {
+  min-height: 100px;
+  background-color: #e9ecef;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+footer p {
+  float: left;
+  padding: 20px;
+  max-width: 55%;
+}
+
+footer ul.socialmedia {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  list-style: none;
+}
+
+footer ul.socialmedia li {
+  float: right;
+  margin-right: 20px;
+  line-height: 10px;
+  cursor: pointer;
+}
+
+footer ul.socialmedia li i {
+  padding: 10px;
+  color: #105959;
+}
+
+footer ul.socialmedia li:hover{
+  opacity: 0.8;
+  text-decoration: underline;
+  transition: opacity 0.5s;
+}
+
+/* Navigation */
+.mainnav {
+  display: block;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  padding: 0px;
+  background-color: #e9ecef;
+  box-shadow: 0px 2px 5px 3px #f7f7f7;
+  position: static;
+  top: 0;
+  right: 0;
+  border-bottom: #ccc solid 1px;
+}
+
+nav ul{
+  float: right;
+  list-style: none;
+  transform: translate(0px, 10px);
+}
+
+nav ul li {
+  font-weight: bold;
+  background-color: #f7fdfd;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 5px 0px 0px #737c7d;
+  float: right;
+  text-align: center;
+  width: 100px;
+  padding: 15px 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  background-color: #ffffff;
+  transition: background-color 0.5s;
+}
+
+img#logo {
+  height: 200px;
+  padding: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.oval {
+  width: 500px;
+  height: 400px;
+  background: white;
+  border-radius: 50%;
+  transform: rotate(-15deg);
+  position: absolute;
+  left: -150px;
+  top: -60px;
+  z-index: 0;
+}
+
+div.menuicon {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  display: none;
+}
+#nav-toggle { position: absolute; left: 0; top: 0; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: black;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+/**************** Homepage-only styles ****************/

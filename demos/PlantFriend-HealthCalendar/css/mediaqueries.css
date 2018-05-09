@@ -1,0 +1,103 @@
+/* Media Queries */
+
+/* Smallest devices */
+@media (max-width: 400px) {
+  img#logo {
+    height: 160px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  nav {
+    background-color: white;
+    box-shadow: none;
+    border-bottom: none;
+  }
+
+  .oval {
+    display: none;
+  }
+}
+
+/* Small devices (phones up to 468px) */
+@media (max-width: 468px) {
+  footer {
+    height: 180px;
+  }
+  footer p {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer ul.socialmedia {
+    position: static;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+  }
+  footer ul.socialmedia li {
+    float: none;
+    display: inline-block;
+
+  }
+}
+
+/* Medium devices (tablets, screens up to 850px)*/
+@media (max-width: 850px) {
+  /* Navigation */
+  .mainnav {
+    display: none;
+  }
+
+  nav {
+    height: 100px;
+    width: 100%;
+    padding: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  nav ul{
+    position: absolute;
+    top: 28px;
+    right: 0;
+    list-style: none;
+    transform: translate(0px, 10px);
+    background-color: #f1f1f1;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    border-radius: 10px;
+  }
+
+  nav ul li {
+    background-color: #f1f1f1;
+    display: block;
+    float: none;
+    text-align: center;
+    width: 150px;
+    padding: 20px 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border: 1.5px solid #468c98;
+    cursor: pointer;
+  }
+
+  div.menuicon {
+    display: block;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+}
